@@ -8,23 +8,96 @@
   ### O que é POO?
    > O paradigma de programação orientada a objetos [POO](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_orientada_a_objetos) é uma abordagem de programação que visa a construção de objetos que se relacionem entre si.
 
-  - O que é uma classe?  
+  - Classe:
     - Uma classe é um modelo de objeto que contém atributos e métodos.
 
-  - O que é um método?
+  - Construtor:
+    - O construtor é um método que é executado quando um objeto é criado.
+
+  - Método:
     - Um método é uma função que pertence a uma classe.
 
-  - O que é um atributo?
+  - Atributo:
     - Um atributo é um valor que pertence a um objeto.
 
-  - O que é um objeto?
+  - Objeto:
     - Um objeto é uma instância de uma classe.
 
-  - O que é uma instância?
+  - Instância:
     - Uma instância é uma cópia de um objeto.
 
-  - O que é um Construtor?
-    - O construtor é um método que é executado quando um objeto é criado.
+  . This:
+    - O this é uma referência para o objeto que está sendo manipulado.
+
+  - Herança:
+    - Uma classe pode herdar de outra classe.
+  
+  EX: 
+  ```js 
+  class Pessoa { // Classe
+    constructor(nome, idade) { //Construtor
+      this.nome = nome; //Atributos
+      this.idade = idade;
+    }
+
+    falar() { //Métodos
+      console.log(`${this.nome} está falando...`);
+    }
+  }
+  ```
+  EX: `Ìnstância`
+  ```js
+  const pessoa1 = new Pessoa('João', 20);
+  const pessoa2 = new Pessoa('Maria', 25);
+
+  // Acessando métodos
+  pessoa1.falar();
+  pessoa2.falar();
+
+  // Acessando atributos
+  console.log(pessoa1.nome);
+
+  // Alterando atributos
+  pessoa1.nome = 'José';
+  pessoa1.falar();
+  ```
+  EX: `this`
+  ```js 
+  class Pessoa { // Classe
+    constructor(nome, idade) { //Construtor
+      this.nome = nome; //Atributos
+      this.idade = idade;
+    }
+
+    falar() { //Métodos
+      console.log(`${this.nome} está falando...`); // this faz referência ao atributo da classe
+    }
+  }
+
+  const nome = 'Pedro';
+
+  const pessoa1 = new Pessoa('João', 20);
+  pessoa1.falar(); // João está falando...
+  ```
+
+  EX: `Herança`
+  ```js  
+  class Aluno extends Pessoa {
+      constructor (nome, idade, matricula) {
+          super(nome, idade); // Chamando o construtor da classe pai
+          this.matricula = matricula;
+      }
+
+      minhaMatricula() {
+          console.log(`A matrícula de ${this.nome} é ${this.matricula} está falando...`);
+      }
+  }
+
+  const aluno = new Aluno('José', 29, 102030);
+
+  aluno.matriculaAluno(); 
+  ```
+
 
   ----------------------------------------------------
   ### ECMAScript + JavaScript
