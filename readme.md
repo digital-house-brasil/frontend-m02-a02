@@ -121,7 +121,7 @@
 
 --------------------------------------------
 ### Exercícios
-[HankerRank](https://www.hackerrank.com/contests/desafio-poo/challenges)
+[HankerRank](https://www.hackerrank.com/desafio-poo)
 
 
 ###### tags: `Frontend` `nodeJS` `JavaScript` `POO`
