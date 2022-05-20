@@ -37,4 +37,4 @@ class Aluno extends Pessoa {
 
 const aluno = new Aluno('José', 29, 102030);
 
-aluno.matriculaAluno(); 
+aluno.minhaMatricula(); 

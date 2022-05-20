@@ -99,7 +99,7 @@
 
 <details>
   <summary>5. Herança</summary>
-  
+
   EX: `Herança`
   ```js  
   class Aluno extends Pessoa {
@@ -115,7 +115,7 @@
 
   const aluno = new Aluno('José', 29, 102030);
 
-  aluno.matriculaAluno(); 
+  aluno.minhaMatricula(); 
   ```
 </details>
 ###### tags: `Frontend` `nodeJS` `JavaScript` `POO`
