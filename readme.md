@@ -118,4 +118,10 @@
   aluno.minhaMatricula(); 
   ```
 </details>
+
+--------------------------------------------
+### Exercícios
+[HankerRank](https://www.hackerrank.com/contests/desafio-poo/challenges)
+
+
 ###### tags: `Frontend` `nodeJS` `JavaScript` `POO`
