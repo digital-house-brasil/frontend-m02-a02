@@ -119,9 +119,4 @@
   ```
 </details>
 
---------------------------------------------
-### Exercícios
-[HankerRank](https://www.hackerrank.com/desafio-poo)
-
-
 ###### tags: `Frontend` `nodeJS` `JavaScript` `POO`
